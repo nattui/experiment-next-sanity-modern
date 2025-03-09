@@ -1,29 +1,60 @@
 {
-  "name": "experiment-next-sanity-modern",
-  "description": "Next.js + Sanity: A Powerful Website Starter with Real-time Visual Editing",
+  "name": "experiment-next-sanity-modern-2",
+  "version": "1.0.3",
+  "private": true,
   "scripts": {
-    "dev": "npm-run-all --parallel dev:*",
-    "dev:next": "npm run dev --workspace=nextjs-app",
-    "dev:studio": "npm run dev --workspace=studio",
-    "import-sample-data": "cd studio && sanity dataset import sample-data.tar.gz --replace"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
   },
-  "keywords": [
-    "Sanity",
-    "Next.js",
-    "Headless CMS",
-    "Visual Editing",
-    "Live Content API (LCAPI)",
-    "Real-time"
-  ],
-  "bugs": {
-    "url": "https://github.com/sanity-io/sanity-template-nextjs-clean/issues"
+  "dependencies": {
+    "@hookform/resolvers": "^4.1.3",
+    "@next/third-parties": "^15.2.1",
+    "@portabletext/react": "^3.2.1",
+    "@radix-ui/react-accordion": "^1.2.3",
+    "@radix-ui/react-avatar": "^1.1.3",
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-dropdown-menu": "^2.1.6",
+    "@radix-ui/react-label": "^2.1.2",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@sanity/code-input": "^5.1.2",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/orderable-document-list": "^1.2.3",
+    "@sanity/preview-url-secret": "^2.1.5",
+    "@sanity/ui": "^2.15.2",
+    "@sanity/vision": "^3.78.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.5.2",
+    "lucide-react": "^0.477.0",
+    "motion": "^12.4.10",
+    "next": "15.2.1",
+    "next-sanity": "^9.9.0",
+    "next-themes": "^0.4.4",
+    "prism-react-renderer": "^2.4.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-player": "^2.16.0",
+    "resend": "^4.1.2",
+    "sanity": "^3.78.1",
+    "sonner": "^2.0.1",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.24.2"
   },
-  "homepage": "https://github.com/sanity-io/sanity-template-nextjs-clean#readme",
-  "workspaces": [
-    "studio",
-    "nextjs-app"
-  ],
   "devDependencies": {
-    "npm-run-all": "^4.1.5"
+    "@sanity/client": "^6.28.3",
+    "@tailwindcss/postcss": "^4.0.11",
+    "@types/node": "^22.13.9",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "eslint": "^9.21.0",
+    "eslint-config-next": "15.2.1",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.11",
+    "typescript": "^5.8.2"
   }
 }
